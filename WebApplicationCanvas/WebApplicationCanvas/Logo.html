@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Logo YPCI via la balise canvas</title>
+		<script type="text/javascript" src="Logo.js"></script>
+	</head>
+	<body onload="Initialisation();">
+		<!--img id="logo" src="images/logo.png"  /-->
+		<canvas id="CanvasLogo" width="130" height="130">Votre navigateur ne prend pas en charge la balise canvas</canvas>
+		<br />
+		<canvas id="CanvasCouleurs" width="400" height="20" onmousemove="CanvasCouleur_MouseMove(event);">Votre navigateur ne prend pas en charge la balise canvas</canvas>
+		<br />
+		<div id="couleurSelectionnee"></div>
+		<input id="ButtonChangerCouleur" type="button" value="Changer la couleur du logo" onclick="DessinLogo();" />
+		<input id="ButtonRetablir" type="button" value="Retablir le logo" onclick="RetablirLogo();" />
+	</body>
+</html>
